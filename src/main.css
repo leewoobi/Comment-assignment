@@ -1,0 +1,77 @@
+main{
+     height:100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+section{
+     margin-bottom:5vw ;
+}
+
+
+#form-commentInfo{ width: 100%; display: flex; align-items: center; justify-content: center;   } 
+#comment-count{ margin-bottom: 10px; text-align: left;} 
+#comment-input{ width: 50%; height: 3.3em; }
+#submit{
+     margin: 1vw;
+      border-radius: 21px;
+      background-color: rgb(82, 157, 233); width: 5.5em; height: 3.3em;
+     font-size: 15px; font-weight: bold; color: aliceblue; } 
+#voteUp, #voteDown{ width: 3.5em; height: 1.9em; background-color: aqua; }
+#comments{ width:80%; margin-top: 10px; }
+.eachComment{ width :100%; margin: 10px; padding: 0.5em; border-bottom: 1px solid #c1bcba; }
+.eachComment .name{ font-size: 1.5em; font-weight: bold; margin-bottom: 0.3em; display: flex; justify-content: space-between; }
+.eachComment .inputValue{ font-size: 1.2em; font-style: italic; }
+.eachComment .time{ font-size: 0.7em; color: #c1bcba; font-style: oblique; margin-top: 0.5em; margin-bottom: 0.5em; }
+.eachComment .voteDiv{ display: flex; justify-content: flex-end; }
+.eachComment .deleteComment{ background-color: rgb(255, 131, 131); color: aliceblue; }
+
+
+.modal{ 
+
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+position: fixed; top : 0; left : 0;
+width: 100%;
+height : 100%;
+display: flex;
+justify-content: center;
+align-items: center; }
+
+.modal__overlay{
+     background-color: rgba(0,0,0,0.6);
+     width: 100%; height : 100%;
+     position: absolute; }
+
+.modal__content{ 
+     background-color: white;
+     padding: 50px 100px;
+     text-align: center;
+     position: relative;
+     width : 15%;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+     border-radius: 15px; }
+
+.modal__content #modifyVal{
+      margin-bottom: 1em; width: 100%; height: 3.3em; }
+
+#inBtn{ display: flex; justify-content: center; }
+
+#inBtn #ok {
+      all : unset;
+      background-color: steelblue;
+      color: white;
+      padding: 5px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right : 10px; }
+
+#inBtn #cancle {
+     all : unset;
+     background-color: steelblue;
+     color: white;
+     padding: 5px 20px;
+     border-radius: 5px;
+     cursor: pointer; }
+
+.hidden{ display: none; }
